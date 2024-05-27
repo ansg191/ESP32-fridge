@@ -15,6 +15,7 @@ public:
 
 	virtual void setup(BLEServer *server) = 0;
 	virtual BLEUUID getUUID() = 0;
+
 protected:
 	BLEService *service = nullptr;
 };
