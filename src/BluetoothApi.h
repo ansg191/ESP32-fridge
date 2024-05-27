@@ -5,7 +5,8 @@
 #ifndef ESP32_FRIDGE_BLUETOOTHAPI_H
 #define ESP32_FRIDGE_BLUETOOTHAPI_H
 
-#include "BLEService.h"
+#include <BLEService.h>
+
 #include "ble_services/DeviceInfoService.h"
 #include "ble_services/TempService.h"
 #include "ble_services/TimeService.h"
