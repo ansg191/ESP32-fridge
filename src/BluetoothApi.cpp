@@ -2,16 +2,20 @@
 // Created by Anshul Gupta on 5/25/24.
 //
 
+#include <Arduino.h>
+
 #include "BluetoothApi.h"
 
 class ServerCallbacks : public BLEServerCallbacks {
 public:
 	void onConnect(BLEServer *pServer) override
 	{
+		Serial.println("Connected");
 		pServer->startAdvertising();
 	}
 	void onDisconnect(BLEServer *pServer) override
 	{
+		Serial.println("Disconnected");
 		pServer->startAdvertising();
 	}
 };
